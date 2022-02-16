@@ -1,11 +1,19 @@
-/* <!--****** Google font ******--> */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-body{
-    background-color: rgba(7, 7, 7, 0.904);
+/******* Google font *******/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.full-body{
+    background-color: rgba(7, 7, 7, 0.822);
     font-family: 'Poppins', sans-serif;
 }    
 .site-title{
     display: flex;
     color: white;
     justify-content: center;
-} */
+}
+.calculat-part{
+    background-color: rgba(29, 29, 179, 0.103);
+    padding: 10px;
+}
+.footer-part{
+    background-color: rgba(29, 29, 179, 0.39);
+    padding: 2rem;
+}
