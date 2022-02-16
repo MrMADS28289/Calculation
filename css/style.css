@@ -1,18 +1,23 @@
 /******* Google font *******/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ /****** body style ******/
 .full-body{
     background-color: rgba(7, 7, 7, 0.822);
     font-family: 'Poppins', sans-serif;
-}    
+}
+ /****** Title style ******/
 .site-title{
     display: flex;
     color: white;
     justify-content: center;
 }
+ /****** Calculat part style ******/
 .calculat-part{
     background-color: rgba(29, 29, 179, 0.103);
     padding: 10px;
 }
+/****** Footer part style ******/
 .footer-part{
     background-color: rgba(29, 29, 179, 0.39);
     padding: 2rem;

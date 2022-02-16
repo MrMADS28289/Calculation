@@ -29,13 +29,13 @@
             </section>
             <section class="col-12 col-md-6">
                 <div class="calculat-part">
-                    <div class="ms-3">
+                    <div class="ms-3 mb-3">
                         <h3 class="text-center text-white mb-3">Income</h3>
                         <div class="row mb-3">
                             <h5 class="col-6 text-white">Income:</h5>
                             <div class="col-6 input-group w-50">
                                 <span class="input-group-text">$</span>
-                                <input type="text" class="form-control"
+                                <input id="income-input" type="text" class="form-control"
                                     aria-label="Dollar amount (with dot and two decimal places)">
                             </div>
                             <p class="d-none bg-white text-danger my-2 ms-3 p-1">!.Please inter a valid income ammount
@@ -52,17 +52,17 @@
                                 <div class="col-6">
                                     <div class="input-group w-75 mb-1">
                                         <span class="input-group-text">$</span>
-                                        <input type="text" class="form-control"
+                                        <input id="food-input" type="text" class="form-control"
                                             aria-label="Dollar amount (with dot and two decimal places)">
                                     </div>
                                     <div class="input-group w-75 mb-1">
                                         <span class="input-group-text">$</span>
-                                        <input type="text" class="form-control"
+                                        <input id="rent-input" type="text" class="form-control"
                                             aria-label="Dollar amount (with dot and two decimal places)">
                                     </div>
                                     <div class="input-group w-75">
                                         <span class="input-group-text">$</span>
-                                        <input type="text" class="form-control"
+                                        <input id="clothes-input" type="text" class="form-control"
                                             aria-label="Dollar amount (with dot and two decimal places)">
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@
                                 </p>
                             </div>
                         </div>
-                        <button type="button"
+                        <button id="calculat-btn" type="button"
                             class="bg-primary border border-none rounded text-white my-3">Calculat</button>
                         <div class="row">
                             <div class="col-6">
@@ -83,29 +83,29 @@
                                 <h5 class=" text-white">Balance:</h5>
                             </div>
                             <div class="col-6">
-                                <h5 class=" text-white">$<span class=" text-white">00</span></h5>
-                                <h5 class=" text-white">$<span class=" text-white">00</span></h5>
+                                <h5 class=" text-white">$<span id="total-expenses" class=" text-white">00</span></h5>
+                                <h5 class=" text-white">$<span id="remaining-balance" class=" text-white">00</span></h5>
                             </div>
                         </div>
                         <div class="row">
                             <h3 class="text-center text-white my-3">Savings</h3>
                             <div class="col-6">
-                                <h5 class=" text-white">Save:</h5>
-                                <h5 class="mt-4 text-white">Saving Amount:</h5>
+                                <h5 class=" text-white mt-2">Save:</h5>
+                                <h5 class="mt-5 text-white mt-3">Saving Amount:</h5>
+                                <p class=" text-white">Remaining Balance:</p>
                             </div>
                             <div class="col-6">
                                 <div class="input-group w-75">
                                     <span class="input-group-text">%</span>
                                     <input type="text" class="form-control"
                                         aria-label="Dollar amount (with dot and two decimal places)">
+                                    <button type="button"
+                                        class="bg-primary border border-none rounded text-white py-1">Save</button>
                                 </div>
-                                <h5 class="mt-3 text-white">$<span class=" text-white">00</span></h5>
+                                <h5 class="mt-5 text-white">$<span class=" text-white">00</span></h5>
+                                <h5 class=" text-white">$<span class=" text-white mt-2">00</span></h5>
                             </div>
                         </div>
-                        <button type="button"
-                            class="bg-primary border border-none rounded text-white my-3">Save</button>
-                        <h5 class=" text-white">Remaining Balance: <span class=" text-white">$<span
-                                    class=" text-white">00</span></span></h5>
                     </div>
                 </div>
             </section>
@@ -129,6 +129,8 @@
         <h6 class="text-center text-white">© 2008-2022 Mr.MADS Calculation, Inc.</h6>
     </footer>
 
+    <!--****** Script file link ******-->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
