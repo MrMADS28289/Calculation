@@ -66,7 +66,8 @@
                                             aria-label="Dollar amount (with dot and two decimal places)">
                                     </div>
                                 </div>
-                                <p class="d-none bg-white text-danger my-2 ms-3 p-1">!.Please inter a valid food cost
+                                <p id="food-erorr" class="d-none bg-white text-danger my-2 ms-3 p-1">!.Please inter a
+                                    valid food cost
                                 </p>
                                 <p class="d-none bg-white text-danger my-2 ms-3 p-1">!.Please inter a valid rent const
                                 </p>
@@ -84,7 +85,7 @@
                             </div>
                             <div class="col-6">
                                 <h5 class=" text-white">$<span id="total-expenses" class=" text-white">00</span></h5>
-                                <h5 class=" text-white">$<span id="remaining-balance" class=" text-white">00</span></h5>
+                                <h5 class=" text-white">$<span id="balance" class=" text-white">00</span></h5>
                             </div>
                         </div>
                         <div class="row">
@@ -97,13 +98,14 @@
                             <div class="col-6">
                                 <div class="input-group w-75">
                                     <span class="input-group-text">%</span>
-                                    <input type="text" class="form-control"
+                                    <input id="save-input" type="text" class="form-control"
                                         aria-label="Dollar amount (with dot and two decimal places)">
-                                    <button type="button"
+                                    <button id="save-btn" type="button"
                                         class="bg-primary border border-none rounded text-white py-1">Save</button>
                                 </div>
-                                <h5 class="mt-5 text-white">$<span class=" text-white">00</span></h5>
-                                <h5 class=" text-white">$<span class=" text-white mt-2">00</span></h5>
+                                <h5 class="mt-5 text-white">$<span id="save-amount" class=" text-white">00</span></h5>
+                                <h5 class=" text-white">$<span id="remaining-balance" class=" text-white mt-2">00</span>
+                                </h5>
                             </div>
                         </div>
                     </div>
