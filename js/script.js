@@ -9,11 +9,28 @@ function getTotalExpenses() {
     const foodCost = getCost('food');
     const rentCost = getCost('rent');
     const clothesCost = getCost('clothes');
-    if (isNaN(foodCost)) {
-        document.getElementById('food-erorr')
+    if (isNaN(foodCost) != 0) {
+        document.getElementById('food-erorr').style.display = 'block';
+        document.getElementById('rent-erorr').style.display = 'none';
+        document.getElementById('clothes-erorr').style.display = 'none';
+        foodCost = '';
     }
-    const totalExpenses = foodCost + rentCost + clothesCost;
-    return totalExpenses;
+    else if (isNaN(rentCost) != 0) {
+        document.getElementById('rent-erorr').style.display = 'block';
+        document.getElementById('clothes-erorr').style.display = 'none';
+        document.getElementById('food-erorr').style.display = 'none';
+        rentCost = '';
+    }
+    else if (isNaN(clothesCost) != 0) {
+        document.getElementById('clothes-erorr').style.display = 'block';
+        document.getElementById('food-erorr').style.display = 'none';
+        document.getElementById('rent-erorr').style.display = 'none';
+        clothesCost = '';
+    }
+    else {
+        const totalExpenses = foodCost + rentCost + clothesCost;
+        return totalExpenses;
+    }
 }
 function getIncomeAmount() {
     const incomeInput = document.getElementById('income-input').value;

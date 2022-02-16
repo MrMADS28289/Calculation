@@ -17,6 +17,18 @@
     background-color: rgba(29, 29, 179, 0.103);
     padding: 10px;
 }
+#incom-erorr{
+    display: none;
+}
+#food-erorr{
+    display: none;
+}
+#rent-erorr{
+    display: none;
+}
+#clothes-erorr{
+    display: none;
+}
 /****** Footer part style ******/
 .footer-part{
     background-color: rgba(29, 29, 179, 0.39);
