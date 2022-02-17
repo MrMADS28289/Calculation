@@ -41,6 +41,7 @@ function getTotalExpenses() {
         clothesCost = '';
     }
     else {
+        document.getElementById('clothes-erorr').style.display = 'none';
         const totalExpenses = foodCost + rentCost + clothesCost;
         return totalExpenses;
     }
