@@ -86,4 +86,9 @@ document.getElementById('save-btn').addEventListener('click', function () {
         saveAmount.innerText = saveings;
         remainingBalance.innerText = balance - saveings;
     }
+    if (balance < saveAmount.innerText) {
+        alert('your savings is gratertehn balance');
+        saveAmount.innerText = '0.00';
+        remainingBalance.innerText = balance;
+    }
 })
