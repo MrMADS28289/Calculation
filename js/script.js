@@ -22,25 +22,27 @@ function getTotalExpenses() {
     const foodCost = getCost('food');
     const rentCost = getCost('rent');
     const clothesCost = getCost('clothes');
-    if (isNaN(foodCost) != 0) {
+    if (isNaN(foodCost) != 0 || foodCost < 0) {
         document.getElementById('food-erorr').style.display = 'block';
         document.getElementById('rent-erorr').style.display = 'none';
         document.getElementById('clothes-erorr').style.display = 'none';
         foodCost = '';
     }
-    else if (isNaN(rentCost) != 0) {
+    else if (isNaN(rentCost) != 0 || rentCost < 0) {
         document.getElementById('rent-erorr').style.display = 'block';
         document.getElementById('clothes-erorr').style.display = 'none';
         document.getElementById('food-erorr').style.display = 'none';
         rentCost = '';
     }
-    else if (isNaN(clothesCost) != 0) {
+    else if (isNaN(clothesCost) != 0 || clothesCost < 0) {
         document.getElementById('clothes-erorr').style.display = 'block';
         document.getElementById('food-erorr').style.display = 'none';
         document.getElementById('rent-erorr').style.display = 'none';
         clothesCost = '';
     }
     else {
+        document.getElementById('food-erorr').style.display = 'none';
+        document.getElementById('rent-erorr').style.display = 'none';
         document.getElementById('clothes-erorr').style.display = 'none';
         const totalExpenses = foodCost + rentCost + clothesCost;
         return totalExpenses;
